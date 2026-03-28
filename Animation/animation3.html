@@ -1,0 +1,74 @@
+<!-- example css transition -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>CSS Transition</title>
+	<style>
+		button{
+			width:150px;		 
+			height:50px;		 
+			background:#3300ff;
+			color:white;
+			font-size:22px;
+			border:none;
+			transition: border-radius 60ms linear;
+		}
+		button:hover{
+			border-radius:50%;
+		}
+        /*demo on multiple transitions*/
+
+        div{
+			width:200px;		/* old */
+			height:200px;		/* old */
+			background:#3300ff;
+			margin:auto;
+			transition: width 2s linear, height 2s linear;
+		}
+		div:hover{
+			width:400px;		/* new */
+			height:400px;		/* new */			 
+		} 
+
+        /**/
+        h1{
+			background:#3300ff;
+			color:white;
+			width:200px;
+			margin:auto;
+			text-align:center;
+			transition:  background 2s, font-size 2s, width 2s;
+		}
+		h1:hover{
+			width:600px;  
+			font-size:80px;
+			background:red;
+		}
+		input{
+			outline:none;
+			width:200px;
+			font-size:22px;
+			transition:box-shadow 500ms;
+		}
+		input:hover{
+			box-shadow:1px 1px 10px red;
+		}
+
+
+	</style>
+ </head>
+ <body>
+	<h3>demo on changing button shape</h3>
+	<button>Log In</button>
+
+    <h3>demo on multiple transitions</h3>
+	<div></div>
+
+    <h3>demo on multiple transitions</h3>
+ 		<h1>Naresh i Tech</h1>
+		<input type="text"/> <bR> <Br>
+		<input type="text"/> <bR> <Br>
+
+
+ </body>
+</html>

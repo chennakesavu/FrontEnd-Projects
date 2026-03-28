@@ -1,0 +1,26 @@
+<!-- example css transition -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>CSS Transition</title>
+	<style>
+		img{
+			width:250px;		/* old value */
+			height:250px;		/* old value */
+		}
+		#img1{ transition: height 4s	linear 0s;	}
+		#img2{ transition: width 4s	linear 0s; }
+		#img1:hover{
+			height:700px;	/* new value */
+		}
+		#img2:hover{
+			width:700px;	/* new value */
+		}
+	</style>
+ </head>
+ <body>
+	<h3>demo on changing image width & height</h3>
+	<img id="img1" src="images/jeep.jpg"/> <br>
+	<img id="img2" src="images/car.png"/>
+ </body>
+</html>

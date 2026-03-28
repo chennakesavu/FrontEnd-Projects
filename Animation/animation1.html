@@ -1,0 +1,28 @@
+<!-- example css transition -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>CSS Transition</title>
+	<style>
+		img{
+			width:250px;		/* old value */
+			height:250px;
+			/*transition-property:width;
+			transition-duration:5s;
+			transition-timing-function:ease;
+			transition-delay:0s;
+				OR		*/
+			transition: width 5s ease 0s;
+		}
+		img:hover{
+			width:800px;	/* new value */
+		}
+	</style>
+</head>
+ <body>
+	<h3>demo on changing img width</h3>
+	<img src="images/jeep.jpg"/>
+  	<img src="images/range-rover.png"/>
+	<img src="images/car.png"/>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!-- example on custom animations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>CSS Animations</title>
+	<style>
+		@keyframes changecolor1
+		{
+			from{ color:red; }
+			to{ color:blue;}
+		}
+		@keyframes changecolor2
+		{
+			from{ color:#33ffff; }
+			to{ color:#009900;}
+		}
+		.c1{
+			animation-name:changecolor1;
+			animation-duration:3s;
+		}
+		.c2{
+			animation-name:changecolor2;
+			animation-duration:3s;
+		}
+	</style>
+ </head>
+ <body>
+		<h3>demo on custom animation</h3>
+		<h1 class="c1">Hypertext Markup Language</h1>
+		<h1 class="c1">Cascading Style Sheets</h1>
+<h1 class="c2">JavaScript</h1>
+		<h1 class="c2">BootStrap</h1>
+ </body>
+</html>
